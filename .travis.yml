@@ -1,14 +1,17 @@
 dist: trusty
 language: java
 jdk: 
-    - openjdk8
+- openjdk8
 
 addons:
  sonarcloud:
   organization: "cptpackage"
-   token:
-    secure: "6cc17bb13509f6cc8f0068488eadfcdcd12fa52d"
+  token: 
+   secure: "6cc17bb13509f6cc8f0068488eadfcdcd12fa52d"
 
-script:
-    - ant build
-    - sonar-scanner
+script: 
+- ant build
+- sonar-scanner
+
+git:
+  depth: false
