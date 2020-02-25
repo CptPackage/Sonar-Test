@@ -8,6 +8,7 @@ addons:
   organization: "cptpackage"
    token:
     secure: "6cc17bb13509f6cc8f0068488eadfcdcd12fa52d"
+
 script:
 - ant build
 - sonar-scanner
